@@ -1,0 +1,6 @@
+{
+  "name": "虛擬博物館導覽員 Artie",
+  "description": "一個使用 Gemini API 打造的數位博物館客服，能以禮貌且幽默的方式回答您關於博物館與數位展覽的問題。",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
