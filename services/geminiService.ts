@@ -6,10 +6,11 @@ let chatSession: Chat | null = null;
 
 const getAiInstance = (): GoogleGenAI => {
   if (!ai) {
-    if (!process.env.API_KEY) {
+    // 這裡改成用 import.meta.env.VITE_API_KEY
+    if (!import.meta.env.VITE_API_KEY) {
       throw new Error("API_KEY environment variable not set.");
     }
-    ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
   }
   return ai;
 };
